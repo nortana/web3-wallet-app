@@ -22,6 +22,11 @@ https://learnblockchain.cn/docs/web3.js/
 ```
 https://ethereum.org/zh/developers/docs/standards/tokens/erc-20
 ```
+
+生成goerli测试地址
+```
+https://app.infura.io/login
+```
 # 安装相关插件
 ```
 npm install web3 bip39 ethereumjs-tx@1.3.7 ethereumjs-util ethereumjs-wallet
