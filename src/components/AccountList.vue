@@ -1,10 +1,12 @@
 <script setup>
-import { ref, defineProps, compile, computed } from "vue";
+import { ref, defineProps, compile, computed, inject  } from "vue";
 import Web3 from "web3";
 import ethwallet from "ethereumjs-wallet";
 import Tx from "ethereumjs-tx";
 
-const web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
+const wssGoerliTest = inject('$wssGoerliTest');//注入全局方法
+
+const web3 = new Web3(Web3.givenProvider || wssGoerliTest);
 
 const show = ref(false);
 const password = ref("");

@@ -101,7 +101,7 @@ const confirmMn = async () => {
   </van-space>
   <template v-if="showMn">
     <p>{{ mnemonic }}</p>
-    <van-button type="primary" size="mini" @click="confrimSaveMnemonic">主要按钮</van-button>
+    <van-button type="primary" size="mini" @click="confrimSaveMnemonic">输入助记词</van-button>
   </template>
 
   <van-dialog
